@@ -1,0 +1,36 @@
+# PianoConnect Sample Configuration File
+
+## Network connection.
+
+# 1. UDP messaging.
+udp-local <ip> <port>
+udp-remote <ip> <port>
+
+# 2. UDP client-server mode.
+udp-server <ip> <port>
+# or
+udp-client <ip> <port>
+
+# 3. TCP client-server mode.
+tcp-server <ip> <port>
+# or
+tcp-client <ip> <port>
+
+# Set latency explicitly, in milliseconds.
+# Leave out for auto latency estimation.
+# latency 100
+
+## Device selection.
+
+# Take input from device (the piano)
+input <device>
+
+# Send mixed midi messages to device.
+output <device>
+
+# Server as a virtual midi port (linux/mac)
+port <name>
+
+## Logging
+
+log <file>
